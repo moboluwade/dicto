@@ -2,7 +2,6 @@ export default async function AboutWord({ params }) {
     const word = params.word
     const res = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
     const wordData = (await res.json())[0]
-    // const {word:newWord, phonetic, phonetics, origin, meanings} = wordDescription[0]
 
     return (
         <main>
