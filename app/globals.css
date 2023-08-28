@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.navbar-wrapper{
+    margin-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
+.navbar-container{
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.searchbar{
+    padding-left: -5rem;
+}
+.searchbar-container{
+    position: relative;
+}
+.searchbar{
+    width: 100%;
+    height: 2rem;
+    border-radius: 8px;
+    outline: solid;
+    outline-width: 2px;
+    outline-color: green;
+}
+.searchbar-label{
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 10px;
 }
